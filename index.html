@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pro Wrestling Survey</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Pro Wrestling Survey</h1>
+      <p id="description">What are your favorite Pro Wrestling Events and Matches?</p>  
+
+      <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+
+        <label for="number" id="number-label">Age (optional)</label>
+        <input id="number" type="number" min="16" max="100" placeholder="Age">
+
+      <label for="dropdown">As a fan, how would you describe yourself?</label>
+      <select id="dropdown">
+        <option>--Select a description--</option>
+        <option value="casual">Casual</option>
+        <option value="hardcore">Hardcore</option>
+        <option value="fivestar">Five Star Critic</option>
+      </select>
+
+      <p>Please select your favorite brand:</p>
+      <label><input type="radio" name="brand" value="collision" checked>Collision</label>
+      <label><input type="radio" name="brand" value="dynamite">Dynamite</label>
+      <label><input type="radio" name="brand" value="nxt">NXT</label>
+      <label><input type="radio" name="brand" value="roh">Ring of Honor</label>
+      <label><input type="radio" name="brand" value="raw">RAW</label>
+      <label><input type="radio" name="brand" value="smackdown">SmackDown</label>
+
+      <p>Favorite match type(s):</p>
+      <label><input type="checkbox" value="singles">Singles</label>
+      <label><input type="checkbox" value="tagteam">Tag team</label>
+      <label><input type="checkbox" value="handicap">Handicap</label>
+      <label><input type="checkbox" value="ironman">Iron Man</label>
+      <label><input type="checkbox" value="lumberjack">Lumberjack</label>
+      <label><input type="checkbox" value="lastman">Last Man Standing</label>
+      <label><input type="checkbox" value="noconodq">No Countout / No Disqualification</label>
+      <label><input type="checkbox" value="submission">Submission</label>
+      <label><input type="checkbox" value="streetfight">Street Fight</label>
+      <label><input type="checkbox" value="tlc">Tables Ladders & Chairs</label>
+      <label><input type="checkbox" value="weapons">Weapons</label>
+
+      <p>Any ideas or suggestions?</p>
+      <textarea name="textarea" rows="8" cols="80" placeholder="Enter your comments here..."></textarea>
+
+      <button id="submit" type="submit" name="button">Submit</button>
+
+      </form>
+
+    </main>
+	<!-- <script src="index.js"></script> -->
+  </body>
+</html>
